@@ -19,7 +19,7 @@ namespace SonicBloom.Koreo.Demos
 		
 		void Start()
 		{
-			guiTextCom = GetComponent<Text>();
+			guiTextCom = this.GetComponent<Text>();
 
 			// Register for Koreography Events.  This sets up the callback.
 			Koreographer.Instance.RegisterForEventsWithTime(eventID, UpdateText);
